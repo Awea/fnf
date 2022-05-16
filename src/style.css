@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+
+    font-family: 'Poppins';
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.section {
+    min-height: 100vh;
+    height: 95vh;
+    display: flex;
+    place-items: center;
+    border: 1px solid red;
+}
+
+.landing
+{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(255,192,203);
+    position: fixed;
+    display: block;
+    z-index: 100;
+}
+
+.rectangle {
+    position: absolute;
+    width: 45vw;
+    height: 120px;
+    justify-items: baseline;
+
+
+    background: #FFDBEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 59px;
+
+}
+
+.dashnav {
+    background: #FFDBEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 59px;
+    overflow: hidden;
+    position: absolute;
+    float: left;
+    right: 30vw;
+    bottom: 50px;
+}
+
+.dashnav a {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    padding: 16px 18px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.cube
+{
+    background-image: url(../static/cube.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.chamfer
+{
+    background-image: url(../static/chamfer.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.semicircle
+{
+    background-image: url(../static/semicircle.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.flat
+{
+    background-image: url(../static/flat.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.eraser
+{
+    background-image: url(../static/eraser.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.next
+{
+    background-image: url(../static/next.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.dashnav a.active
+{
+    color: white;
+}
+
+.dashnav .icon {
+    display: none;
+  }
+
+.circle
+{
+width: 79px;
+height: 79px;
+left: 449px;
+top: 775px;
+
+padding-right: 10px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+border-radius: 103px;
+}
+.circle:hover
+{
+    border-style: dashed;
+    border-width: 1px;
+    border-color: red;
+}
+
+.rightnav {
+    background: #FFDBEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 59px;
+    position: absolute;
+    overflow: hidden;
+    float: right;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+}
+
+.rightnav a {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    padding: 16px 18px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.leftnav {
+    background: #FFDBEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 59px;
+    position: absolute;
+    float: left;
+    bottom: 50px;
+    left: 100px;
+    display: block;
+}
+
+.leftnav a {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    padding: 16px 18px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.instructions{
+    float: left;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw;
+    position: relative;
+    top: calc(100vh/2);
+    left: 50px;
+}

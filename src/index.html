@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iheartblob - Fungible / Non-Fungible</title>
+</head>
+
+<body>
+    <canvas class="webgl"></canvas>
+
+    <section class="landing" id="landing">
+        <div class="instructions">
+        <h1>
+            Welcome to the Fungible Non Fungible App! 
+            <br>
+        </h1>
+        <h3>
+            <br>
+            Ready to design an architecture pavilion with the global community? 
+        </h3>
+        <p>
+            Sync your Wallet to continue.
+        </p>
+        <p>
+            Controls: Left Click = Add Block, Hold Right Click to Rotate, Scroll Wheel to Zoom. 
+        </p>
+        <button type="button" onclick="sync()">Sync!</button>
+        </div>
+    </section>
+    <section id="section-one" style="display: none;">
+        <div class="dashnav" id="myDashnav>">
+            <a class="circle" href="#cube" onclick="cube()">
+                <img class="cube"></img>
+            </a>
+            <a class="circle" href="#sphere" onclick="sphere()"> <img class="chamfer"></img></a>
+            <a class="circle" href="#pyramid" onclick="pyramid()"> <img class="semicircle"></img></a>
+            <a class="circle" href="#circle" onclick="circle()"> <img class="flat"></img></a>
+            <a class="circle" href="#erase" onclick="erase()"> <img class="eraser"></img></a>
+        </div>
+        <div class="instructions">
+
+            <h1> Design Your Own Block!</h1>
+            <p>
+                Follow this guide to design and purchase your cryptoblock in order to build TAB 2022
+            </p>
+            <p>
+                Select a primitive from the selection and begin to build. Use the erase tool to delete unwanted blocks.
+            </p>
+        </div>
+        <div class="rightnav" id="myRightnav" onclick="painting()">
+            <a class="circle" href="#sphere"> <img class="next"></img></a>
+        </div>
+    </section>
+    <section id="section-two" style="display:none">
+        <div class="dashnav" id="myDashnav">
+            <a class="circle" style="background: rgba(246, 255, 141, 1);" href="#color1" onclick="color1()"></a>
+            <a class="circle" style="background: rgba(159, 238, 255, 1);" href="#color2" onclick="color2()"></a>
+            <a class="circle" style="background: rgba(199, 255, 205, 1)" onclick="color3()"> </a>
+            <a class="circle" style="background: rgba(255, 157, 216, 1);" href="#color3" onclick="color4()"> </a>
+            <a class="circle" style="background: white;" href="#color4" onclick="color0()"> </a>
+        </div>
+        <div class="rightnav" id="myRightnav" style="display: block;">
+            <a class="circle" href="#sphere" onclick="mintPage()"> <img class="next"></img></a>
+        </div>
+        <div class="instructions">
+
+            <h1> Paint Your Own Block!</h1>
+            <p>
+                Follow this guide to design and purchase your cryptoblock in order to paint TAB 2022
+            </p>
+            <p>
+                Select a color from the selection to paint the timber construction. Use the erase tool to remove paint.
+            </p>
+        </div>
+        <div class="leftnav" id="myLeftnav" onclick="building()">
+            <a class="circle" href="#sphere"> BACK </a>
+        </div>
+    </section>
+    <section id="section-three" style="display:none">
+        <div class="instructions">
+
+            <h1> Good Job, you made a block, lets mint it!</h1>
+            <p>
+            </p>
+            <button type="button" onclick="minting()">MINT BLOCK!</button>
+        </div>
+        <div class="leftnav" id="myLeftnav" onclick="painting()">
+            <a class="circle" href="#sphere"> BACK </a>
+        </div>
+    </section>
+    <section id="section-four" style="display:none; z-index: inherit;">
+        <div class="instructions">
+            <h1>Please Follow The Instructions on your Tezos Wallet.</h1>
+            <br>
+            <p>
+                minting...
+            </p>
+        </div>
+    </section>
+    <section style="display: none">
+        <h1>
+            congratulations you have minted your block successfully to the tezos blockchain, check out the gallery of designs here!
+        </h1>
+    </section>
+</body>
+
+</html>
